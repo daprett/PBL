@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    background-image: url(../Mahasiswa/Asset/Background\ landscape.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 289px;
+    background: rgba(30, 58, 138, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 34px;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 24px;
+}
+
+.user-avatar {
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.username {
+    color: white;
+    font-size: 1.1rem;
+    flex-grow: 1;
+}
+
+.collapse-arrow {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.menu-item {
+    height: 51px;
+    display: flex;
+    align-items: center;
+    gap: 20px;  /* Ruang antara ikon dan teks */
+    padding: 15px 20px;
+    margin: 10px 0;
+    background: white;
+    border-radius: 8px;
+    color: #2D2669;
+    text-decoration: none;
+    font-weight: auto;
+    transition: all 0.3s ease;
+    justify-content: flex-start; /* Pastikan konten berada di kiri */
+    width: 240px;
+}
+
+.menu-icon {
+    width: 20px; /* Ukuran ikon */
+    height: 20px; /* Ukuran ikon */
+    fill: #2D2669; /* Warna ikon */
+    flex-shrink: 0; /* Menghindari ikon mengecil ketika ukuran kontainer berubah */
+    margin-right: 10px; /* Memberikan jarak antara ikon dan teks */
+}
+
+.menu-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
